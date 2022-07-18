@@ -1,0 +1,112 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+.menu-bar {
+    position: relative;
+    background: linear-gradient(275deg, #2948ff, #396afc);
+    height: 45px;
+    line-height: 45px;
+    margin: auto;
+    width: 100%;
+    ul li {
+        margin-right: 25px;
+        a {
+            color: #fff;
+        }
+        &.active a {
+            color: #ada996;
+        }
+    }
+}
+.content_tabsp {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+.margin-auto {
+    max-width: 1200px;
+    margin: 0 auto;
+    .thanh_tabsp {
+        max-width: 590px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "HelveticaNeueMedium";
+        color: #333333;
+        font-size: 18px;
+        padding: 12px 0px;
+        border-right: none;
+        border-left: none;
+        .active_tab {
+            color: #3e20ff;
+        }
+        .click_tab:hover {
+            color: #b40707;
+            cursor: pointer;
+        }
+    }
+    .div_css {
+        margin: 0px -13px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-flow: row wrap;
+        -webkit-flex-flow: row wrap;
+        .giamgia {
+            position: absolute;
+            right: 5px;
+            top: 0px;
+            width: 35px;
+            height: 35px;
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+        .ten_itemindex {
+            h3 {
+                padding: 10px 0px 0px 0px;
+            }
+            .giaban {
+                padding-bottom: 35px;
+            }
+        }
+        .ten_item {
+            float: left;
+            width: 100%;
+            text-align: center;
+            padding: 5px;
+            h3 {
+                color: #3e20ff;
+                font-size: 14px;
+                margin-top: 6px;
+            }
+            .giakm {
+                font-size: 14px;
+
+                color: #333333;
+                span {
+                    color: #b40707;
+                }
+            }
+            .giaban {
+                font-size: 14px;
+
+                color: #333333;
+                span {
+                    color: #4d4d72;
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+}
